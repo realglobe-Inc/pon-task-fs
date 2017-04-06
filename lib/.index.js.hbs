@@ -1,0 +1,21 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+'use strict'
+
+const define = require('./define')
+const chmod = require('./chmod')
+const mkdir = require('./mkdir')
+
+let lib = define.bind(this)
+
+Object.assign(lib, define, {
+  define,
+  mkdir,
+  chmod
+})
+
+module.exports = lib
