@@ -136,6 +136,17 @@ Define task
 | options | Object |  Optional settings |
 
 
+### `symlink(linkages, options) -> function`
+
+Define symlink task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| linkages | Object.&lt;string, string&gt; |  File link ruling |
+| options | Object |  Optional settings |
+| options.force | boolean |  Force create |
+
+
 
 <!-- Section from "doc/guides/03.Signature.md.hbs" End -->
 
