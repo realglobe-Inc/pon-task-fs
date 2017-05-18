@@ -126,6 +126,16 @@ Define task
 | options.mkdir | Array |  Options for mkdir |
 
 
+### `del(Patterns, options) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| Patterns | string&amp;#124;string[] |  File pattern to delete |
+| options | Object |  Optional settings |
+
+
 ### `mkdir(dirnames, options) -> function`
 
 Define task

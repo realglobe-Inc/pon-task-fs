@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",
@@ -27,6 +27,7 @@
     "asfs": "^1.2.3",
     "co": "^4.6.0",
     "filelink": "^3.0.6",
+    "filedel": "^3.0.0",
     "filemode": "^2.0.3"
   },
   "devDependencies": {
@@ -38,13 +39,13 @@
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
-    "ape-updating": "^4.1.0",
+    "ape-updating": "^4.1.1",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
-    "pon-context": "^2.0.1",
+    "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "writeout": "^2.1.0"
+    "writeout": "^2.2.0"
   },
   "engines": {
     "node": ">=6",
