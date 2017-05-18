@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",

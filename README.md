@@ -126,6 +126,16 @@ Define task
 | options.mkdir | Array |  Options for mkdir |
 
 
+### `del(Patterns, options) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| Patterns | string&amp;#124;string[] |  File pattern to delete |
+| options | Object |  Optional settings |
+
+
 ### `mkdir(dirnames, options) -> function`
 
 Define task
@@ -136,14 +146,15 @@ Define task
 | options | Object |  Optional settings |
 
 
-### `del(Patterns, options) -> function`
+### `symlink(linkages, options) -> function`
 
-Define task
+Define symlink task
 
 | Param | type | Description |
 | ---- | --- | ----------- |
-| Patterns | string&amp;#124;string[] |  File pattern to delete |
+| linkages | Object.&lt;string, string&gt; |  File link ruling |
 | options | Object |  Optional settings |
+| options.force | boolean |  Force create |
 
 
 
