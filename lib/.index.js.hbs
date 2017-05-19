@@ -7,17 +7,11 @@
 'use strict'
 
 const define = require('./define')
-const chmod = require('./chmod')
-const mkdir = require('./mkdir')
-const unlink = require('./unlink')
 
 let lib = define.bind(this)
 
 Object.assign(lib, define, {
-  define,
-  chmod,
-  mkdir,
-  unlink
+  define
 })
 
 module.exports = lib
