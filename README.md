@@ -116,6 +116,17 @@ Define task
 | options | Object |  Optional settings |
 
 
+### `cp(linkages, options) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| linkages | Object.&lt;string, string&gt; |  Directory copy ruling |
+| options | Object |  Optional settings |
+| options.force | boolean |  Force create |
+
+
 ### `define(options) -> function`
 
 Define task
