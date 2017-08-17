@@ -7,28 +7,28 @@
 const symlink = require('../lib/symlink.js')
 const ponContext = require('pon-context')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('symlink', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Symlink', () => co(function * () {
+  it('Symlink', async () => {
     let task = symlink({
       [__filename]: `foo.js`
     })
     let ctx = ponContext({
       cwd: `${__dirname}/../tmp/testing-symlink`
     })
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */

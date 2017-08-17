@@ -8,31 +8,30 @@ const chmod = require('../lib/chmod.js')
 const assert = require('assert')
 const writeout = require('writeout')
 const ponContext = require('pon-context')
-const co = require('co')
 
 describe('chmod', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Chmod', () => co(function * () {
+  it('Chmod', async () => {
     let cwd = `${__dirname}/../tmp/testing-chmod`
     let filename = cwd + '/hoge.txt'
-    yield writeout(filename, 'hogehoge', { mkdirp: true, force: true })
+    await writeout(filename, 'hogehoge', {mkdirp: true, force: true})
     let task = chmod({
       [filename]: '444'
     })
     let ctx = ponContext({
       cwd: cwd
     })
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */

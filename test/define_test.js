@@ -7,20 +7,20 @@
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
 const { ok } = require('assert')
-const co = require('co')
+
 
 describe('define', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Define', () => co(function * () {
+  it('Define', async () => {
     let ctx = ponContext({
       cwd: `${__dirname}/../tmp/testing-define`
     })
@@ -29,8 +29,8 @@ describe('define', function () {
     })
     ok(task)
 
-    yield Promise.resolve(task(ctx))
-  }))
+    await Promise.resolve(task(ctx))
+  })
 })
 
 /* global describe, before, after, it */
