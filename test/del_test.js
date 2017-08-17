@@ -8,27 +8,27 @@ const del = require('../lib/del.js')
 const assert = require('assert')
 const writeout = require('writeout')
 const ponContext = require('pon-context')
-const co = require('co')
+
 
 describe('del', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Unlink', () => co(function * () {
+  it('Unlink', async () => {
     let cwd = `${__dirname}/../tmp/testing-del`
     let filename = cwd + '/hoge.txt'
-    yield writeout(filename, 'hogehoge', { mkdirp: true, force: true })
+    await writeout(filename, 'hogehoge', { mkdirp: true, force: true })
     let task = del(cwd + '/*.txt')
     let ctx = ponContext({})
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */

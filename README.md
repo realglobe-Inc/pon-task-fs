@@ -168,6 +168,17 @@ Define symlink task
 | options.force | boolean |  Force create |
 
 
+### `write(filename, content, options) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| filename | string |  File name write |
+| content | string&amp;#124;Buffer&amp;#124;function |  Content or content creator function |
+| options | Object |  Optional settings |
+
+
 
 <!-- Section from "doc/guides/03.Signature.md.hbs" End -->
 

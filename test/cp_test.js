@@ -7,28 +7,28 @@
 const cp = require('../lib/cp.js')
 const ponContext = require('pon-context')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('cp', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Copy', () => co(function * () {
+  it('Copy', async () => {
     let task = cp({
       '../../test': `foo`
     }, { force: true })
     let ctx = ponContext({
       cwd: `${__dirname}/../tmp/testing-cp`
     })
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */
