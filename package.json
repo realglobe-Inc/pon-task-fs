@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,28 +23,29 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-fs#readme",
   "dependencies": {
-    "amkdirp": "^1.0.0",
-    "asfs": "^1.2.3",
+    "aglob": "^3.0.0",
+    "amkdirp": "^2.0.0",
+    "asfs": "^2.0.1",
+    "filedel": "^4.0.0",
     "filelink": "^3.0.6",
-    "filedel": "^3.0.0",
     "filemode": "^2.0.3"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
+    "ababel": "^2.0.3",
     "ababel-es2015": "^2.0.1",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.0",
+    "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.1",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "writeout": "^2.2.0"
+    "writeout": "^2.2.1"
   },
   "engines": {
     "node": ">=7.6",
