@@ -28,7 +28,8 @@
     "asfs": "^2.0.1",
     "filedel": "^4.0.0",
     "filelink": "^3.0.6",
-    "filemode": "^2.0.3"
+    "filemode": "^2.0.3",
+    "pon-task-watch": "^2.1.1"
   },
   "devDependencies": {
     "ababel": "^2.0.3",
