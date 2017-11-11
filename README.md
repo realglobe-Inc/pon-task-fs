@@ -116,6 +116,17 @@ Define task
 | options | Object |  Optional settings |
 
 
+### `concat(src, dest, options) -> function`
+
+Concat multiple file into one
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| src | string&amp;#124;string[] |  |
+| dest | function |  |
+| options | Object |  Optional settings |
+
+
 ### `cp(linkages, options) -> function`
 
 Define task

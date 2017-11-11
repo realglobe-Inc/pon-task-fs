@@ -6,8 +6,7 @@
 
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
-const { ok } = require('assert')
-
+const {ok} = require('assert')
 
 describe('define', function () {
   this.timeout(3000)
@@ -21,15 +20,14 @@ describe('define', function () {
   })
 
   it('Define', async () => {
-    let ctx = ponContext({
+    const ctx = ponContext({
       cwd: `${__dirname}/../tmp/testing-define`
     })
-    let task = define({
-      mkdir: [ [ 'foo', 'bar' ] ]
+    const task = define({
+      mkdir: [['foo', 'bar']]
     })
     ok(task)
 
-    await Promise.resolve(task(ctx))
   })
 })
 
