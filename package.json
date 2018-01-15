@@ -26,6 +26,7 @@
     "aglob": "^3.0.0",
     "amkdirp": "^2.0.0",
     "asfs": "^2.0.1",
+    "filecopy": "^4.0.0",
     "filedel": "^4.0.0",
     "filelink": "^3.0.6",
     "filemode": "^2.0.3",
