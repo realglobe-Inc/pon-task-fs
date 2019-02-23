@@ -1,18 +1,18 @@
 language: node_js
 node_js:
-- '7'
+  - '8'
 before_install:
- - npm i npm-cli-login -g
- - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
- - npm who
+  - npm i npm-cli-login -g
+  - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+  - npm who
 install:
-- npm install jsdoc -g
-- npm install
+  - npm install jsdoc -g
+  - npm install
 script:
-- ./ci/build.js
-- ./ci/shim.js
-- ./ci/test.js
+  - ./ci/build.js
+  - ./ci/shim.js
+  - ./ci/test.js
 after_success:
-- ./ci/travis/publish.js
+  - ./ci/travis/publish.js
 env:
   secure: "Ff++LOoQl/a5TXG8/dTKGV+HKpn5aZiy6RD8/N0fx+mRNrX+DGNuWi0cxvX4FSytmjHvO5PDR/XK0SkVTr6y6YT60EzTteFppds/HMXWHVNE3/mC6ACVBonO0TPatCjQ574LMw7cdd0Y5twUKxrk6JWWbqQ/jApJWhvKMlpoD84MWxpCQopDS/mTHiVq0z5ypCyhLYQh6kBEgwYze88S8wnqmwliH3lVUx1XP7ktWupv2DAxf0SUUFH8shBzR/yuHGFcZtt80KkxoRXlpjRpwWMS+rKAaU/Q4ia9ovSHhdkkzbQnsbgTFa+w3E5go7lVpRrViGMlEzxD7eyAOxNQbPrfUwBlnP3bx7wvgzWjS2eZsE70LxZO9Go2+MqbzuGOPrHR51bUpE4wmJmy3T+3SpqHeLddTKyf9R1b8mP5UFuXIaVZb+1YJNYQJGneob1YqkJftH99T0glsOBoir8pRZZ7taOfLmFw89vfPQDi9jHdjvXUpTKqTqKRMttlxpPuGN5etjljV03eOCOCXBPa5gpvbXpVPx0t5ujNp8HcxEElCKfe7MreFjZFXOmf7MNNNGuXtYHSekWKwnm2fOWqnjsjUnGYwBtiZO+ImLss6n7etgvrjyFSBapmRS1xZGTbRbbPgWciJ+CkgRjBsT5yA0qENLYnZa0DjPRkwv0Bi84="
