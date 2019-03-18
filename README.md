@@ -136,6 +136,7 @@ Define task
 | linkages | Object.&lt;string, string&gt; |  Directory copy ruling |
 | options | Object |  Optional settings |
 | options.force | boolean |  Force create |
+| options.ignore | string[] |  Ignore patterns to copy |
 
 
 ### `define(options) -> function`
