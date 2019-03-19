@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "3.1.10",
+  "version": "3.1.11",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",
@@ -25,7 +25,7 @@
   "dependencies": {
     "aglob": "^3.0.1",
     "amkdirp": "^2.0.0",
-    "asfs": "^2.2.2",
+    "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
     "filedel": "^4.0.2",
     "filelink": "^4.0.1",
