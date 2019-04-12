@@ -6,6 +6,7 @@
 
 const write = require('../lib/write.js')
 const assert = require('assert')
+const ponContext = require('pon-context')
 
 describe('write', function () {
   this.timeout(3000)
@@ -19,10 +20,19 @@ describe('write', function () {
   })
 
   it('Write', async () => {
+    const ctx = ponContext()
     await write(
-      `${__dirname}/../tmp/hoge.txt`,
-      () => 'hoge'
-    )
+      `${__dirname}/../tmp/hoge-write.txt`,
+      'hi?'
+    )(ctx)
+  })
+
+  it('Write json', async () => {
+    const ctx = ponContext()
+    await write.json(
+      `${__dirname}/../tmp/hoge-write/a.json`,
+      {name:'This is a'},
+    )(ctx)
   })
 })
 

@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "3.1.12",
+  "version": "3.1.13",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-fs#readme",
   "dependencies": {
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
