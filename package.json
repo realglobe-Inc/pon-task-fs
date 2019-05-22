@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fs",
-  "version": "3.1.15",
+  "version": "3.1.16",
   "description": "Pon task for file system",
   "main": "lib",
   "browser": "shim/browser",
@@ -27,7 +27,7 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
-    "filedel": "^4.0.2",
+    "filedel": "^4.1.1",
     "filelink": "^4.0.1",
     "filemode": "^3.0.0",
     "pon-task-watch": "^2.3.0"
