@@ -178,6 +178,7 @@ Define symlink task
 | linkages | Object.&lt;string, string&gt; |  File link ruling |
 | options | Object |  Optional settings |
 | options.force | boolean |  Force create |
+| options.prefirDir | boolean |  Create directory if source path does'nt exist |
 
 
 ### `write(filename, content, options) -> function`

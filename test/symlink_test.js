@@ -21,10 +21,26 @@ describe('symlink', function () {
   })
 
   it('Symlink', async () => {
-    let task = symlink({
-      [__filename]: `foo.js`
+    const task = symlink({
+      [__filename]: `foo.js`,
+      'bar.js': 'shim/bar.js',
+    }, {
+      force: true,
     })
-    let ctx = ponContext({
+    const ctx = ponContext({
+      cwd: `${__dirname}/../tmp/testing-symlink`
+    })
+    await task(ctx)
+  })
+
+  it('preferDir option', async () => {
+    const task = symlink({
+      ['path/to/dir']: 'shim/path/to/dir'
+    }, {
+      force: true,
+      preferDir: true,
+    })
+    const ctx = ponContext({
       cwd: `${__dirname}/../tmp/testing-symlink`
     })
     await task(ctx)
